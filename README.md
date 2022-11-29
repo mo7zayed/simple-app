@@ -15,7 +15,7 @@ We are using [laravel/sail](https://laravel.com/docs/9.x/sail) for the developme
 - `cp .env.example .env` then fill the required data
 - `docker-compose run --rm --user=$(id -u) composer install --ignore-platform-reqs`
 - `docker-compose run --rm --user=$(id -u) php artisan key:generate`
-- `./vendor/bin/sail up -d`
+- `./vendor/bin/sail up -d` then wait for 10 seconds till mysql container finish initialization
 - `./vendor/bin/sail artisan migrate:fresh --seed`
 
 # Code Style
